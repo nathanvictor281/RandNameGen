@@ -8,9 +8,7 @@
   </head>
   <body>
     <script src="sketch.js"></script>
-  
-
-    <!DOCTYPE html>
+ <!DOCTYPE html>
     <html lang="en">
     <head>
       <meta charset="UTF-8">
@@ -65,18 +63,22 @@
           font-size: 18px;
           margin-bottom: 6px;
         }
+        #reshuffleButton {
+            display:none;
+        }
       </style>
     </head>
     <body>
       <div class="container">
         <h1 class="title">Mr G's Random Name Generator</h1>
         <div class="input-container">
-          <textarea cols="60" rows="10" id="name-input"></textarea>
+          <textarea cols="40" rows="9" id="name-input"></textarea>
         </div>
         <button class="button" onclick="addNames()">Add Names</button>
+        <button class="button" id="reshuffleButton" onclick="displayNames()">Reshuffle Names</button>        
         <ul class="name-list" id="name-list"></ul>
       </div>
-    
+
       <script src="sketch.js"></script>
     </body>
     </html>
