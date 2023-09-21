@@ -16,8 +16,8 @@ function setup() {
 function addNames() {
   let inputNames = input.value();
   if (inputNames !== "") {
-    names = inputNames.split(",").map(name => name.trim());
-    input.value("");
+    names = inputNames.split(keyCode).map(name => name.trim());
+    input.value(event.keyCode == 13);
     displayNames();
   }
 }
