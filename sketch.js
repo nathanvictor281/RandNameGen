@@ -30,4 +30,5 @@ function displayNames() {
     listItem.parent(nameList);
   }
   document.getElementById("reshuffleButton").style.display = "block";
+  document.getElementById("reshuffleButton").style.text-align = "center";
 }
