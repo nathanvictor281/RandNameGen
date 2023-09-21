@@ -1,8 +1,6 @@
 let names = [];
 let input;
 let nameList;
-var match = /\r|\n/.exec(text);
-let text = $("#name-list").val();
 
 function setup() {
   let canvas = createCanvas(400, 200);
@@ -33,6 +31,3 @@ function displayNames() {
     listItem.parent(nameList);
   }
 }
-
-
-
