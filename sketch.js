@@ -25,9 +25,9 @@ function addNames() {
 function displayNames() {
   shuffle(names, true);
   nameList.html("");
-  document.getElementById("reshuffleButton").style.display = "block"
   for (let i = 0; i < names.length; i++) {
     let listItem = createElement("li", `${i + 1}. ${names[i]}`);
     listItem.parent(nameList);
   }
+  document.getElementById("reshuffleButton").style.display = "block";
 }
