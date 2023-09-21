@@ -1,6 +1,8 @@
 let names = [];
 let input;
 let nameList;
+var match = /\r|\n/.exec(text);
+let text = $("#name-list").val();
 
 function setup() {
   let canvas = createCanvas(400, 200);
@@ -16,8 +18,8 @@ function setup() {
 function addNames() {
   let inputNames = input.value();
   if (inputNames !== "") {
-    names = inputNames.split(keyCode).map(name => name.trim());
-    input.value(event.keyCode == 13);
+    names = inputNames.split(/\r|\n/).map(name => name.trim());
+    input.value("");
     displayNames();
   }
 }
