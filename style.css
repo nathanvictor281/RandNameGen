@@ -5,3 +5,57 @@ html, body {
 canvas {
   display: block;
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+.container {
+  text-align: center;
+	background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.input-container {
+	margin-bottom: 20px;
+}
+.input-container input {
+  width: 300px;
+	padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.button {
+	background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.name-list {
+  list-style-type: none;
+	padding: 0;
+  text-align: left;
+  margin-top: 20px;
+}
+.name-list li {
+	font-size: 18px;
+  margin-bottom: 6px;
+}
+#reshuffleButton {
+  display:none;
+	text-align: center;
+	width: 493px;
+	margin-top: 10px;
+}
