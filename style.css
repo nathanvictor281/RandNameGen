@@ -55,5 +55,7 @@ body {
 }
 #reshuffleButton {
   display:none;
-  text-align: center;
+	text-align: center;
+	width: 493px;
+	margin-top: 10px;"
 }
